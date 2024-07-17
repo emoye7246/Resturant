@@ -1,3 +1,6 @@
-export default function menu(){
+
+export default function Menu(){
     
+    let content = document.getElementById("content")
+    content.innerHTML = 'hello'
 }
