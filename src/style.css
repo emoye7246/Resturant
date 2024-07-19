@@ -49,3 +49,11 @@ height: 20px;
 #store{
     margin: 20px;
 }
+
+#menus {
+
+    display: flex;
+    margin-top: 40px;
+    height: 100px;
+
+}

@@ -24,6 +24,7 @@ rebel.src = Icons
 
 
     menu.addEventListener('click', Menu)
+    
     home.addEventListener('click', () => {
         content.innerHTML = ' '
         header()
