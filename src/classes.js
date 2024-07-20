@@ -14,8 +14,10 @@ export class Food {
     displayFood(){
 
         let content = document.getElementById('content')
+
         let placeMent = document.createElement('div')
         placeMent.id = `placement`
+
         let images = document.createElement('img')
         let descriptions = document.createElement('div')
         let foodNames = document.createElement('div')
@@ -24,10 +26,13 @@ export class Food {
         images.src = `${this.image}`
         images.style.height = '200px'
         images.style.width = '300px'
+
         descriptions.innerHTML = `${this.description}`
         descriptions.style.height = `150px`
         descriptions.style.width = `300px`
+
         foodNames.innerHTML = `${this.foodName}`
+        
         prices.innerHTML = `${this.price}`
 
         content.appendChild(appetizersSection)
