@@ -23,7 +23,10 @@ rebel.src = Icons
     let book = document.getElementById('book')
 
 
-    menu.addEventListener('click', Menu)
+    menu.addEventListener('click', () => {
+        content.innerHTML = ' '
+        Menu()
+    })
     
     home.addEventListener('click', () => {
         content.innerHTML = ' '

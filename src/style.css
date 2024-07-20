@@ -1,13 +1,20 @@
-html{
-    height: 100vh;
-}
+html, body{
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    min-height: 100%;
+  }
 body{
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Background.png') ;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 
 }
@@ -56,4 +63,22 @@ height: 20px;
     margin-top: 40px;
     height: 100px;
 
+}
+#AppSection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* perfect but chang back */
+
+#placement > img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#placement {
+    margin: 30px;
 }
