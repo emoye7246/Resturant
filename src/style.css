@@ -102,6 +102,9 @@ h1{
 #placeChefs{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-left: 100px;
 }
 
 #placeChefs > img {
