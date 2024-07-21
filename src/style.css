@@ -64,7 +64,7 @@ height: 20px;
     height: 100px;
 
 }
-#AppSection{
+#AppSection,  #DessertSection,  #EntreSection{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -82,3 +82,5 @@ height: 20px;
 #placement {
     margin: 30px;
 }
+
+/* if you want a header background color set the first div of the html elements margin botton to 200px */

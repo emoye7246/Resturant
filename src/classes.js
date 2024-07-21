@@ -1,6 +1,12 @@
 export let appetizersSection = document.createElement('div')
 appetizersSection.id = 'AppSection'
 
+export let EntreSection = document.createElement('div')
+EntreSection.id = 'EntreSection'
+
+export let DessertSection = document.createElement('div')
+DessertSection.id = 'DessertSection'
+
 export class Food {
 
 
@@ -11,7 +17,7 @@ export class Food {
         this.price = price
     }
 
-    displayFood(){
+    displayFood(section){
 
         let content = document.getElementById('content')
 
@@ -24,25 +30,29 @@ export class Food {
         let prices = document.createElement('div')
 
         images.src = `${this.image}`
-        images.style.height = '200px'
+        images.style.height = '170px'
         images.style.width = '300px'
 
         descriptions.innerHTML = `${this.description}`
-        descriptions.style.height = `150px`
+        descriptions.style.height = `200px`
         descriptions.style.width = `300px`
 
         foodNames.innerHTML = `${this.foodName}`
-        
+
         prices.innerHTML = `${this.price}`
 
-        content.appendChild(appetizersSection)
-        appetizersSection.appendChild(placeMent)
+        content.appendChild(section)
+
+        section.appendChild(placeMent)
+        
         placeMent.appendChild(images)
         placeMent.appendChild(descriptions)
         placeMent.appendChild(foodNames)
         placeMent.appendChild(prices)
 
     }
+
+    
     // im making two more divs for sepereation
     
 }
