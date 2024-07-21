@@ -105,19 +105,25 @@ h1{
     flex-wrap: wrap;
     margin: 30px;
     margin-left: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 #placeChefs > img {
 
     border: 1px solid black;
     border-radius: 20px;
+    margin: 30px;
+    margin-top: 0px;
+    margin-bottom: 100px;
 
 }
-#placeChefs > img, div{
+#chefContent > div{
     margin: 30px;
 }
 
 #Bio{
+    margin-top: 0px;
     font-size: 30px;
 }
 /* if you want a header background color set the first div of the html elements margin botton to 200px */
