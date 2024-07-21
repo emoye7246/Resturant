@@ -30,16 +30,20 @@ export class Food {
         let prices = document.createElement('div')
 
         images.src = `${this.image}`
-        images.style.height = '170px'
+        images.style.height = '150px'
         images.style.width = '300px'
 
         descriptions.innerHTML = `${this.description}`
-        descriptions.style.height = `200px`
+        descriptions.style.fontFamily = `hello`
+        descriptions.style.height = `125px`
         descriptions.style.width = `300px`
+        descriptions.style.paddingBottom = `40px`
 
         foodNames.innerHTML = `${this.foodName}`
+        foodNames.style.fontSize = `20px`
 
         prices.innerHTML = `${this.price}`
+
 
         content.appendChild(section)
 
@@ -55,4 +59,48 @@ export class Food {
     
     // im making two more divs for sepereation
     
+}
+export class Chefs {
+    constructor(image, name, bio){
+        this.image = image, 
+        this.name = name,
+        this.bio = bio
+    }
+
+    displayChefs(){
+        
+        let content = document.getElementById('content')
+        let placeChefs = document.createElement('div')
+        let chefContent = document.createElement('div')
+        chefContent.id = 'chefContent'
+        placeChefs.id = 'placeChefs'
+        content.appendChild(placeChefs)
+        
+        let chefs = document.createElement('h1')
+        content.appendChild(chefs)
+
+        let names = document.createElement ('div')
+        names.id = 'Bio'
+        names.innerHTML = `${this.name}`
+        
+
+        let images = document.createElement('img')
+        images.src = `${this.image}`
+        images.style.height = `400px`
+        images.style.width = `400px`
+
+        let bios = document.createElement('div')
+        bios.innerHTML = `${this.bio}`
+        bios.style.width = `400px`
+        bios.style.height = `400px`
+
+
+        placeChefs.appendChild(images)
+        placeChefs.appendChild(chefContent)
+
+        chefContent.appendChild(names)
+        chefContent.appendChild(bios)
+
+        
+    }
 }

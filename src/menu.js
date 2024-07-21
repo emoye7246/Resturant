@@ -4,6 +4,9 @@ import CrouqeMonsieur from '/Users/elijahmoye/Desktop/resturant/Resturant/src/im
 import Souffle from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/soufflè.jpg'
 import Ratatouille from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Ratatouille.jpg'
 import Frites from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Frites.jpg'
+import Macron from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Macrons.jpg'
+import Hazel from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Hazel.jpg'
+import Crepes from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Crepes.jpg'
 import Lobster from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/Lobster-Thermoid.jpg'
 import { appetizersSection } from "./classes"
 import { EntreSection } from "./classes"
@@ -22,6 +25,8 @@ export default function Menu(){
     let menu = document.createElement('h1')
     menu.innerHTML = 'Menu'
     content.appendChild(menu)
+
+    // Appetizers
 
     let appetizers = document.createElement('h2')
     appetizers.innerHTML = 'Appetizers'
@@ -57,6 +62,7 @@ export default function Menu(){
      food3.displayFood(appetizersSection)
   
 
+    // Entres
 
     let entres = document.createElement('h2')
     entres.innerHTML = `Entres`
@@ -76,7 +82,7 @@ export default function Menu(){
     let ratatouille = new Food (
         `${Ratatouille}`, 
         `The main event and the one you came for, with so much history this dish brings the past and present 
-        together in one bite. This childhood cuisine came was brought back into light with the help of <em> Igo's <em> , 
+        together in one bite. This childhood cuisine came was brought back into light with the help of <em> Igo's </em> , 
         The finest food critic in Paris, review after dining in the final days of the Famous Guesteau's resturant. 
         Words dont describe it enough you must let your tastebuds tell the story `,
         `Ratatouille`, 
@@ -96,6 +102,44 @@ export default function Menu(){
     lobsterThermidor.displayFood(EntreSection)
     ratatouille.displayFood(EntreSection)
     frites.displayFood(EntreSection)
+
+    // Desserts
+
+    let desserts = document.createElement('h2')
+    desserts.innerHTML = `Desserts`
+    content.appendChild(desserts)
+
+
+    let crepes = new Food(
+        `${Crepes}`, 
+        `In this popular french dessert we prepare it and serve it to you quicker than anyone in world
+        and the sweetness of the Crepe stands the test of time prepared by our beautiful chef Colette Tatou`, 
+        `Crepes`, 
+        `$ 12.99`
+    )
+
+    let hazel = new Food(
+        `${Hazel}`, 
+        `This delicious dish will make you want to stay in Paris so be prepared for the mouthwatering taste of our 
+        hazelnut and crème fraîche meringues with lemon and parmesan, Our chef Colette has perfected this dish and not 
+        even the great Remy can duplicate it `,
+        `Hazelnut and Crème Fraîche Meringues`, 
+        `$ 14.99`
+    )
+
+    let macron = new Food(
+        `${Macron}`, 
+        `Who has not heard of the delicious taste and sweetness of the delicate Macron. Its a taple of the culture and 
+        we are proud to serve our Macrons with love and carfulness and love`,
+        `Macron`, 
+        `$  7.99`
+    )
+
+
+    crepes.displayFood(DessertSection)
+    hazel.displayFood(DessertSection)
+    macron.displayFood(DessertSection)
+    // hazelnut and crème fraîche meringues with lemon and parmesan
 
     // Header, image, description, foodName, price
 }

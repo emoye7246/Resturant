@@ -3,6 +3,7 @@ import './style.css';
 import Icons from '/Users/elijahmoye/Desktop/resturant/Resturant/src/images/La-Ratatoillue.png'
 import Menu from './menu';
 import { header } from '../hompage';
+import About from './about';
 
 
 
@@ -19,19 +20,21 @@ rebel.src = Icons
     let home = document.getElementById('home')
     let menu = document.getElementById('menu')
     let about = document.getElementById('about')
-    let services = document.getElementById('services')
-    let book = document.getElementById('book')
 
 
-    menu.addEventListener('click', () => {
-        content.innerHTML = ' '
-        Menu()
-    })
+
     
     home.addEventListener('click', () => {
         content.innerHTML = ' '
         header()
 
     })
+
+    menu.addEventListener('click', Menu)
+
+    about.addEventListener('click', About)
+
+
+
 
 header()
